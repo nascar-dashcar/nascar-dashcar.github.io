@@ -6,10 +6,49 @@
  <center> <h1>EHECK</h1>
 <p>WOW THIS IS MY WEBSITE</p>
   
-  <video autoplay="autoplay" loop="true">
-   <source src="videos/yeat.mp4" type="video/mp4">
-  </video>
-  
+  <video id="yeat" src="videos/yeat.mp4"  muted autoplay loop ></video>
+
+<script>
+
+    function toggleMute() 
+
+    {
+
+        var video = document.getElementById("myvideo");
+
+        if (video.muted) 
+
+        {
+
+            video.muted = false;
+
+        } 
+
+        else 
+
+        {
+
+            debugger;
+
+            video.muted = true;
+
+            video.play()
+
+        }
+
+    }
+
+    $(document).ready(function () 
+
+    {
+
+        setTimeout(toggleMute, 3000);
+
+    }
+
+    )
+
+</script>
   
 </center>
 </body>
